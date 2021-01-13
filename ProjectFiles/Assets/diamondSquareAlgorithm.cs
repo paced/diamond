@@ -29,7 +29,7 @@ public class diamondSquareAlgorithm : MonoBehaviour {
 	// Initialises the terrain object
 	private void Awake() {
 		data = transform.GetComponent<TerrainCollider>().terrainData;
-		size = data.heightmapWidth;
+		size = data.heightmapResolution;
 
 		SetSeed((int)Random.Range(-1000.0f, 1000.0f));
 		Reset();
